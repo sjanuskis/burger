@@ -1,0 +1,112 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+  border: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  padding: 0;
+  margin: 0; }
+
+body {
+  width: 30%;
+  min-height: 100vh;
+  height: 100%; }
+  body h1 {
+    text-align: center;
+    padding-top: 30px; }
+    body h1 span {
+      background-color: #cc2727;
+      padding: 8px;
+      color: white; }
+  body h2 {
+    text-align: center;
+    padding: 25px 0; }
+  body .burger {
+    width: 90%;
+    margin: 0 auto; }
+    body .burger .bun-top {
+      height: 102px;
+      width: 80%;
+      background-color: rgba(247, 193, 70, 0.85);
+      margin: 0 auto;
+      border-radius: 135px 135px 30px 30px; }
+      body .burger .bun-top:hover {
+        border: 1px solid #02b1cd;
+        cursor: pointer; }
+      body .burger .bun-top .bun-topTwo {
+        height: 100px;
+        width: 100%;
+        background-color: rgba(247, 193, 70, 0.85);
+        margin: 0 auto;
+        border-radius: 135px 135px 30px 30px;
+        border-bottom: 10px solid #d3a53c; }
+    body .burger .cheese {
+      height: 18px;
+      width: 85%;
+      margin: 0 auto;
+      background-color: #eed102;
+      border-bottom: 3px solid #b8ab0b; }
+    body .burger .tomato {
+      height: 30px;
+      width: 70%;
+      margin: 0 auto;
+      background-color: #be0303;
+      border-bottom: 2px solid #820f0f; }
+    body .burger .onion {
+      height: 18px;
+      width: 55%;
+      margin: 0 auto;
+      background-color: #581458;
+      display: flex;
+      justify-content: space-evenly; }
+      body .burger .onion span {
+        height: 18px;
+        width: 18px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.67);
+        justify-content: space-around; }
+    body .burger .meatball {
+      display: flex;
+      height: 60px;
+      width: 60%;
+      margin: 0 auto;
+      justify-content: space-between; }
+      body .burger .meatball span {
+        height: 60px;
+        width: 65px;
+        background-color: #7c4220;
+        border-radius: 50%; }
+    body .burger .pickle {
+      height: 45px;
+      width: 73%;
+      margin: 0 auto;
+      background-color: #64d788;
+      border-radius: 0px 0px 100px 100px;
+      border-bottom: 11px solid rgba(0, 0, 0, 0.29); }
+    body .burger .patty {
+      height: 45px;
+      width: 85%;
+      margin: 0 auto;
+      background-color: #de5e13;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+      border-radius: 20px; }
+    body .burger .bun-bottom {
+      width: 80%;
+      height: 50px;
+      margin: 0 auto;
+      background-color: rgba(247, 193, 70, 0.85);
+      border-top: 10px solid rgba(211, 165, 60, 0.72);
+      border-radius: 15px 15px 35px 35px; }
+    body .burger .plate {
+      height: 25px;
+      width: 95%;
+      margin: 0 auto;
+      background-color: #646464;
+      border-radius: 0px 0px 30px 30px; }
+
+/*# sourceMappingURL=style.css.map */
