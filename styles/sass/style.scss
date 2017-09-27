@@ -57,99 +57,106 @@ body{
     #left{
 
       width: 30%;
-    min-height: 100vh;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-      #burger{
+      #ingridients{
         width: 90%;
         margin: 0 auto;
 
-        #bun-top{
-          height: 102px;
-          width: 80%;
-          background-color: rgba(247, 193, 70, 0.85);
-          margin: 0 auto;
-          border-radius: 135px 135px 30px 30px;
-
-          &:hover{
-            border: 1px solid #02b1cd;
-            cursor: pointer;
-          }
-
-          #bun-topTwo{
-            height: 100px;
-            width: 100%;
-            background-color: rgba(247, 193, 70, 0.85);
-            margin: 0 auto;
-            border-radius: 135px 135px 30px 30px;
-            border-bottom: 10px solid #d3a53c;
-
-          }
-        }
-
         #cheese{
-          height: 18px;
+          padding-top: 18px;
           width: 85%;
           margin: 0 auto;
           background-color: #eed102;
           border-bottom: 3px solid #b8ab0b;
 
-          &:hover{
-            cursor: pointer;
-          }
         }
-        #cheese1{
-          height: 18px;
-          width: 85%;
-          margin: 0 auto;
-          background-color: #eed102;
-          border-bottom: 3px solid #b8ab0b;
 
-          &:hover{
-            cursor: pointer;
-          }
+        #addCheese{
+          text-align: center;
+          padding: 2px;
+          background-color: rgba(255, 235, 59, 0.6);
+          width: 22%;
+          margin: 0 auto;
+          border: 2px solid #eaea6d;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          cursor: pointer;
         }
-        #cheese2{
-          height: 18px;
-          width: 85%;
-          margin: 0 auto;
-          background-color: #eed102;
-          border-bottom: 3px solid #b8ab0b;
 
-          &:hover{
-            cursor: pointer;
-          }
+        #addTomato{
+          text-align: center;
+          padding: 2px;
+          background-color: rgba(255, 235, 59, 0.6);
+          width: 22%;
+          margin: 0 auto;
+          border: 2px solid #eaea6d;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          cursor: pointer;
         }
-        #cheese3{
-          height: 18px;
-          width: 85%;
-          margin: 0 auto;
-          background-color: #eed102;
-          border-bottom: 3px solid #b8ab0b;
 
-          &:hover{
-            cursor: pointer;
-          }
+        #addOnion{
+          text-align: center;
+          padding: 2px;
+          background-color: rgba(255, 235, 59, 0.6);
+          width: 22%;
+          margin: 0 auto;
+          border: 2px solid #eaea6d;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          cursor: pointer;
+        }
+
+        #addMeatball{
+          text-align: center;
+          padding: 2px;
+          background-color: rgba(255, 235, 59, 0.6);
+          width: 22%;
+          margin: 0 auto;
+          border: 2px solid #eaea6d;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          cursor: pointer;
+        }
+
+        #addPickle{
+          text-align: center;
+          padding: 2px;
+          background-color: rgba(255, 235, 59, 0.6);
+          width: 22%;
+          margin: 0 auto;
+          border: 2px solid #eaea6d;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          cursor: pointer;
+        }
+
+        #addPatty{
+          text-align: center;
+          padding: 2px;
+          background-color: rgba(255, 235, 59, 0.6);
+          width: 22%;
+          margin: 0 auto;
+          border: 2px solid #eaea6d;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          cursor: pointer;
         }
 
         #tomato{
-          height: 30px;
+          padding-top: 30px;
           width: 70%;
           margin: 0 auto;
           background-color: #be0303;
           border-bottom: 2px solid #820f0f;
 
-          &:hover{
-            cursor: pointer;
-          }
         }
 
         #onion{
-          height: 18px;
           width: 55%;
           margin: 0 auto;
           background-color: #581458;
@@ -164,106 +171,34 @@ body{
             justify-content: space-around;
 
           }
-          &:hover{
-            cursor: pointer;
-          }
         }
 
-        #meatballs{
-          display: flex;
-          width: 60%;
+        #meatball{
+          height: 60px;
+          width: 65px;
+          background-color: #7c4220;
+          border-radius: 50%;
           margin: 0 auto;
-          justify-content: space-between;
-
-          #meatball1{
-            height: 60px;
-            width: 65px;
-            background-color: #7c4220;
-            border-radius: 50%;
-
-            &:hover{
-              cursor: pointer;
-            }
-          }
-          #meatball2{
-            height: 60px;
-            width: 65px;
-            background-color: #7c4220;
-            border-radius: 50%;
-
-            &:hover{
-              cursor: pointer;
-            }
-          }
-          #meatball3{
-            height: 60px;
-            width: 65px;
-            background-color: #7c4220;
-            border-radius: 50%;
-
-            &:hover{
-              cursor: pointer;
-            }
-          }
         }
 
         #pickle{
-          height: 45px;
+          padding-top: 45px;
           width: 73%;
           margin: 0 auto;
           background-color: #64d788;
           border-radius: 0px 0px 100px 100px;
           border-bottom: 11px solid rgba(0, 0, 0, 0.29);
 
-          &:hover{
-            cursor: pointer;
-          }
         }
 
-        #pattyTop{
-          height: 45px;
+        #patty{
+          padding-top: 45px;
           width: 85%;
           margin: 0 auto;
           background-color: #de5e13;
           border-bottom: 2px solid rgba(0, 0, 0, 0.26);
           border-radius: 20px;
 
-          &:hover{
-            cursor: pointer;
-          }
-        }
-        #pattyBottom{
-          height: 45px;
-          width: 85%;
-          margin: 0 auto;
-          background-color: #de5e13;
-          border-bottom: 2px solid rgba(0, 0, 0, 0.26);
-          border-radius: 20px;
-
-          &:hover{
-            cursor: pointer;
-          }
-        }
-
-        #bun-bottom{
-          width: 80%;
-          height: 50px;
-          margin: 0 auto;
-          background-color: rgba(247, 193, 70, 0.85);
-          border-top: 10px solid rgba(211, 165, 60, 0.72);
-          border-radius: 15px 15px 35px 35px;
-
-          &:hover{
-            cursor: pointer;
-          }
-        }
-
-        #plate{
-          height: 25px;
-          width: 95%;
-          margin: 0 auto;
-          background-color: #646464;
-          border-radius: 0px 0px 30px 30px;
         }
       }
     }
@@ -285,17 +220,15 @@ body{
       align-items: center;
       text-align: center;
 
-      h1{
+      #checkout{
+        background-color: #cc2727;
+        padding: 20px;
+        color: white;
         text-align: center;
-        padding-top: 30px;
+        margin-top: 30px;
+        font-size: 30px;
+        display: none;
 
-        #checkout{
-          background-color: #cc2727;
-          padding: 8px;
-          color: white;
-          cursor: pointer;
-
-        }
       }
 
       h2{
@@ -306,7 +239,7 @@ body{
 
     #right{
 
-        width: 30%;
+      width: 30%;
       min-height: 100vh;
       height: 100%;
       display: flex;
@@ -314,220 +247,47 @@ body{
       justify-content: flex-end;
       padding-bottom: 100px;
 
-        #burger{
-          width: 90%;
+      #burger{
+        width: 90%;
+        margin: 0 auto;
+
+        #bunTopR{
+          height: 102px;
+          width: 80%;
+          background-color: rgba(247, 193, 70, 0.85);
           margin: 0 auto;
+          border-radius: 135px 135px 30px 30px;
 
-          #bun-topR{
-            height: 102px;
-            width: 80%;
-            background-color: rgba(247, 193, 70, 0.85);
-            margin: 0 auto;
-            border-radius: 135px 135px 30px 30px;
-
-            &:hover{
-              border: 1px solid #02b1cd;
-              cursor: pointer;
-            }
-
-            #bun-topTwoR{
-              height: 100px;
-              width: 100%;
-              background-color: rgba(247, 193, 70, 0.85);
-              margin: 0 auto;
-              border-radius: 135px 135px 30px 30px;
-              border-bottom: 10px solid #d3a53c;
-
-            }
+          &:hover{
+            border: 1px solid #02b1cd;
+            cursor: pointer;
           }
 
-          #cheeseR{
-            height: 18px;
-            width: 85%;
-            margin: 0 auto;
-            background-color: #eed102;
-            border-bottom: 3px solid #b8ab0b;
-            display: none;
+        }
 
-            &:hover{
-              cursor: pointer;
-            }
-          }
-          #cheese1R{
-            height: 18px;
-            width: 85%;
-            margin: 0 auto;
-            background-color: #eed102;
-            border-bottom: 3px solid #b8ab0b;
-            display: none;
 
-            &:hover{
-              cursor: pointer;
-            }
-          }
-          #cheese2R{
-            height: 18px;
-            width: 85%;
-            margin: 0 auto;
-            background-color: #eed102;
-            border-bottom: 3px solid #b8ab0b;
-            display: none;
 
-            &:hover{
-              cursor: pointer;
-            }
-          }
-          #cheese3R{
-            height: 18px;
-            width: 85%;
-            margin: 0 auto;
-            background-color: #eed102;
-            border-bottom: 3px solid #b8ab0b;
-            display: none;
+        #bunBottomR{
+          width: 80%;
+          height: 50px;
+          margin: 0 auto;
+          background-color: rgba(247, 193, 70, 0.85);
+          border-top: 10px solid rgba(211, 165, 60, 0.72);
+          border-radius: 15px 15px 35px 35px;
 
-            &:hover{
-              cursor: pointer;
-            }
-          }
-
-          #tomatoR{
-            height: 30px;
-            width: 70%;
-            margin: 0 auto;
-            background-color: #be0303;
-            border-bottom: 2px solid #820f0f;
-            display: none;
-
-            &:hover{
-              cursor: pointer;
-            }
-          }
-
-          #onionR{
-            height: 18px;
-            width: 55%;
-            margin: 0 auto;
-            background-color: #581458;
-            display: flex;
-            justify-content: space-evenly;
-            display: none;
-
-            span{
-              height: 18px;
-              width: 18px;
-              border-radius: 50px;
-              background-color: rgba(255, 255, 255, 0.67);
-              justify-content: space-around;
-
-            }
-            &:hover{
-              cursor: pointer;
-            }
-          }
-
-          #meatballs{
-            display: flex;
-            width: 60%;
-            margin: 0 auto;
-            justify-content: space-between;
-
-            #meatball1R{
-              height: 60px;
-              width: 65px;
-              background-color: #7c4220;
-              border-radius: 50%;
-              display: none;
-
-              &:hover{
-                cursor: pointer;
-              }
-            }
-            #meatball2R{
-              height: 60px;
-              width: 65px;
-              background-color: #7c4220;
-              border-radius: 50%;
-              display: none;
-
-              &:hover{
-                cursor: pointer;
-              }
-            }
-            #meatball3R{
-              height: 60px;
-              width: 65px;
-              background-color: #7c4220;
-              border-radius: 50%;
-              display: none;
-
-              &:hover{
-                cursor: pointer;
-              }
-            }
-          }
-
-          #pickleR{
-            height: 45px;
-            width: 73%;
-            margin: 0 auto;
-            background-color: #64d788;
-            border-radius: 0px 0px 100px 100px;
-            border-bottom: 11px solid rgba(0, 0, 0, 0.29);
-            display: none;
-
-            &:hover{
-              cursor: pointer;
-            }
-          }
-
-          #pattyTopR{
-            height: 45px;
-            width: 85%;
-            margin: 0 auto;
-            background-color: #de5e13;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.26);
-            border-radius: 20px;
-            display: none;
-
-            &:hover{
-              cursor: pointer;
-            }
-          }
-          #pattyBottomR{
-            height: 45px;
-            width: 85%;
-            margin: 0 auto;
-            background-color: #de5e13;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.26);
-            border-radius: 20px;
-            display: none;
-
-            &:hover{
-              cursor: pointer;
-            }
-          }
-
-          #bun-bottomR{
-            width: 80%;
-            height: 50px;
-            margin: 0 auto;
-            background-color: rgba(247, 193, 70, 0.85);
-            border-top: 10px solid rgba(211, 165, 60, 0.72);
-            border-radius: 15px 15px 35px 35px;
-
-            &:hover{
-              cursor: pointer;
-            }
-          }
-
-          #plate{
-            height: 25px;
-            width: 95%;
-            margin: 0 auto;
-            background-color: #646464;
-            border-radius: 0px 0px 30px 30px;
+          &:hover{
+            cursor: pointer;
           }
         }
+
+        #plate{
+          height: 25px;
+          width: 95%;
+          margin: 0 auto;
+          background-color: #646464;
+          border-radius: 0px 0px 30px 30px;
+        }
+      }
 
     }
   }

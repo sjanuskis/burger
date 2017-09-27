@@ -21,26 +21,11 @@ window.onload = function() {
   const pattyTop = document.getElementById('pattyTop');
   const pattyBottom = document.getElementById('pattyBottom');
 
-  //------------BURGER RIGHT----------//
 
-  const cheeseR = document.getElementById('cheeseR');
-  const cheese1R = document.getElementById('cheese1R');
-  const cheese2R = document.getElementById('cheese2R');
-  const cheese3R = document.getElementById('cheese3R');
-  const tomatoR = document.getElementById('tomatoR');
-  const onionR = document.getElementById('onionR');
-  const meatball1R = document.getElementById('meatball1R');
-  const meatball2R = document.getElementById('meatball2R');
-  const meatball3R = document.getElementById('meatball3R');
-  const pickleR = document.getElementById('pickleR');
-  const pattyTopR = document.getElementById('pattyTopR');
-  const pattyBottomR = document.getElementById('pattyBottomR');
-
+  const addCheese = document.getElementById('addCheese');
   //----------------CHECKOUT-----------//
 
   const checkout = document.getElementById('checkout');
-
-  var counter = 0;
 
   //----------layers function-----------//
 
@@ -58,76 +43,82 @@ window.onload = function() {
 
   //--------element funcions-------//
 
-  function showHideElem(ingridientL, ingridientR){
-    ingridientL.addEventListener("click", function(){
-      if (ingridientR.style.display == 'none') {
-        ingridientR.style.display = 'block';
-        ingridientL.style.display = 'none';
-        counter--;
-        console.log(counter);
-      } else {
-        if(counter < 3){
-          ingridientL.style.display = 'none';
-          ingridientR.style.display = 'block';
-          counter++;
-          console.log(counter);
-        } else {
-          return;
-        }
-      }
+  const bunBottomRr = document.getElementById('bunBottomR');
+  bunBottomRr.insertAdjacentHTML('afterbegin', '<div id="cheese" title="cheese"></div>');
 
-    });
 
-  }
+  // function showHideElem(ingridientL, ingridientR){
+  //   ingridientL.addEventListener("click", function(){
+  //     if (ingridientR.style.display == 'none') {
+  //       ingridientR.style.display = 'block';
+  //       ingridientL.style.display = 'none';
+  //       counter--;
+  //       console.log(counter);
+  //     } else {
+  //       if(counter < 3){
+  //         ingridientL.style.display = 'none';
+  //         ingridientR.style.display = 'block';
+  //         counter++;
+  //         console.log(counter);
+  //       } else {
+  //         return;
+  //       }
+  //     }
+  //   });
+  // }
 
-  // function disableButton(){
-  //   if(counter == 0){
-  //     checkout.style.cursor = 'none';
-  //   }
-  // };
 
-  // console.log(checkout.style.cursor);
 
-  //--------------INTRO LAYER-----------//
+    //
+    // function disableButton(button){
+    //   if(counter == 2){
+    //     button.style.display = 'block';
+    //   }
+    // };
+    //
+    // disableButton(checkout);
+    // console.log(checkout.style.display);
+    // console.log(pickle.style.height);
+    //--------------INTRO LAYER-----------//
 
-  hideLayers(introLayer, burgerLayer);
+    hideLayers(introLayer, burgerLayer);
 
-  //-----------INGRIDIENTS------------//
+    //-----------INGRIDIENTS------------//
 
-  showHideElem(cheese, cheeseR);
-  showHideElem(cheeseR, cheese);
+    // showHideElem(cheese, cheeseR);
+    // showHideElem(cheeseR, cheese);
+    //
+    // showHideElem(tomato, tomatoR);
+    // showHideElem(tomatoR, tomato);
+    //
+    // showHideElem(cheese1, cheese1R);
+    // showHideElem(cheese1R, cheese1);
+    //
+    // showHideElem(cheese2, cheese2R);
+    // showHideElem(cheese2R, cheese2);
+    //
+    // showHideElem(cheese3, cheese3R);
+    // showHideElem(cheese3R, cheese3);
+    //
+    // showHideElem(onion, onionR);
+    // showHideElem(onionR, onion);
+    //
+    // showHideElem(meatball1, meatball1R);
+    // showHideElem(meatball1R, meatball1);
+    //
+    // showHideElem(meatball2, meatball2R);
+    // showHideElem(meatball2R, meatball2);
+    //
+    // showHideElem(meatball3, meatball3R);
+    // showHideElem(meatball3R, meatball3);
+    //
+    // showHideElem(pickle, pickleR);
+    // showHideElem(pickleR, pickle);
+    //
+    // showHideElem(pattyTop, pattyTopR);
+    // showHideElem(pattyTopR, pattyTop);
+    //
+    // showHideElem(pattyBottom, pattyBottomR);
+    // showHideElem(pattyBottomR, pattyBottom);
 
-  showHideElem(tomato, tomatoR);
-  showHideElem(tomatoR, tomato);
-
-  showHideElem(cheese1, cheese1R);
-  showHideElem(cheese1R, cheese1);
-
-  showHideElem(cheese2, cheese2R);
-  showHideElem(cheese2R, cheese2);
-
-  showHideElem(cheese3, cheese3R);
-  showHideElem(cheese3R, cheese3);
-
-  showHideElem(onion, onionR);
-  showHideElem(onionR, onion);
-
-  showHideElem(meatball1, meatball1R);
-  showHideElem(meatball1R, meatball1);
-
-  showHideElem(meatball2, meatball2R);
-  showHideElem(meatball2R, meatball2);
-
-  showHideElem(meatball3, meatball3R);
-  showHideElem(meatball3R, meatball3);
-
-  showHideElem(pickle, pickleR);
-  showHideElem(pickleR, pickle);
-
-  showHideElem(pattyTop, pattyTopR);
-  showHideElem(pattyTopR, pattyTop);
-
-  showHideElem(pattyBottom, pattyBottomR);
-  showHideElem(pattyBottomR, pattyBottom);
-
-};
+  };
