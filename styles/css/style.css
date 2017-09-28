@@ -39,6 +39,50 @@ body {
   body #burger-full {
     display: none;
     justify-content: space-evenly; }
+    body #burger-full #cheese1 {
+      padding-top: 18px;
+      width: 85%;
+      margin: 0 auto;
+      background-color: #eed102;
+      border-bottom: 3px solid #b8ab0b; }
+    body #burger-full #tomato1 {
+      padding-top: 30px;
+      width: 70%;
+      margin: 0 auto;
+      background-color: #be0303;
+      border-bottom: 2px solid #820f0f; }
+    body #burger-full #onion1 {
+      width: 55%;
+      margin: 0 auto;
+      background-color: #581458;
+      display: flex;
+      justify-content: space-evenly; }
+      body #burger-full #onion1 span {
+        height: 18px;
+        width: 18px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.67);
+        justify-content: space-around; }
+    body #burger-full #meatball1 {
+      height: 60px;
+      width: 65px;
+      background-color: #7c4220;
+      border-radius: 50%;
+      margin: 0 auto; }
+    body #burger-full #pickle1 {
+      padding-top: 45px;
+      width: 73%;
+      margin: 0 auto;
+      background-color: #64d788;
+      border-radius: 0px 0px 100px 100px;
+      border-bottom: 11px solid rgba(0, 0, 0, 0.29); }
+    body #burger-full #patty1 {
+      padding-top: 45px;
+      width: 85%;
+      margin: 0 auto;
+      background-color: #de5e13;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+      border-radius: 20px; }
     body #burger-full #left {
       width: 30%;
       display: flex;
@@ -63,7 +107,36 @@ body {
           border: 2px solid #eaea6d;
           margin-top: 5px;
           margin-bottom: 5px;
-          cursor: pointer; }
+          cursor: pointer;
+          position: relative; }
+          body #burger-full #left #ingridients #addCheese .popuptext {
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0; }
+          body #burger-full #left #ingridients #addCheese .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent; }
+          body #burger-full #left #ingridients #addCheese .show {
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s; }
+@keyframes fadeIn {
+  50% {
+    opacity: 1; } }
         body #burger-full #left #ingridients #addTomato {
           text-align: center;
           padding: 2px;
@@ -73,7 +146,36 @@ body {
           border: 2px solid #eaea6d;
           margin-top: 5px;
           margin-bottom: 5px;
-          cursor: pointer; }
+          cursor: pointer;
+          position: relative; }
+          body #burger-full #left #ingridients #addTomato .popuptext1 {
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0; }
+          body #burger-full #left #ingridients #addTomato .popuptext1::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent; }
+          body #burger-full #left #ingridients #addTomato .show1 {
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s; }
+@keyframes fadeIn {
+  50% {
+    opacity: 1; } }
         body #burger-full #left #ingridients #addOnion {
           text-align: center;
           padding: 2px;
@@ -83,7 +185,36 @@ body {
           border: 2px solid #eaea6d;
           margin-top: 5px;
           margin-bottom: 5px;
-          cursor: pointer; }
+          cursor: pointer;
+          position: relative; }
+          body #burger-full #left #ingridients #addOnion .popuptext2 {
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0; }
+          body #burger-full #left #ingridients #addOnion .popuptext2::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent; }
+          body #burger-full #left #ingridients #addOnion .show2 {
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s; }
+@keyframes fadeIn {
+  50% {
+    opacity: 1; } }
         body #burger-full #left #ingridients #addMeatball {
           text-align: center;
           padding: 2px;
@@ -93,7 +224,36 @@ body {
           border: 2px solid #eaea6d;
           margin-top: 5px;
           margin-bottom: 5px;
-          cursor: pointer; }
+          cursor: pointer;
+          position: relative; }
+          body #burger-full #left #ingridients #addMeatball .popuptext3 {
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0; }
+          body #burger-full #left #ingridients #addMeatball .popuptext3::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent; }
+          body #burger-full #left #ingridients #addMeatball .show3 {
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s; }
+@keyframes fadeIn {
+  50% {
+    opacity: 1; } }
         body #burger-full #left #ingridients #addPickle {
           text-align: center;
           padding: 2px;
@@ -103,7 +263,36 @@ body {
           border: 2px solid #eaea6d;
           margin-top: 5px;
           margin-bottom: 5px;
-          cursor: pointer; }
+          cursor: pointer;
+          position: relative; }
+          body #burger-full #left #ingridients #addPickle .popuptext4 {
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0; }
+          body #burger-full #left #ingridients #addPickle .popuptext4::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent; }
+          body #burger-full #left #ingridients #addPickle .show4 {
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s; }
+@keyframes fadeIn {
+  50% {
+    opacity: 1; } }
         body #burger-full #left #ingridients #addPatty {
           text-align: center;
           padding: 2px;
@@ -113,7 +302,36 @@ body {
           border: 2px solid #eaea6d;
           margin-top: 5px;
           margin-bottom: 5px;
-          cursor: pointer; }
+          cursor: pointer;
+          position: relative; }
+          body #burger-full #left #ingridients #addPatty .popuptext5 {
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0; }
+          body #burger-full #left #ingridients #addPatty .popuptext5::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent; }
+          body #burger-full #left #ingridients #addPatty .show5 {
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s; }
+@keyframes fadeIn {
+  50% {
+    opacity: 1; } }
         body #burger-full #left #ingridients #tomato {
           padding-top: 30px;
           width: 70%;
@@ -173,7 +391,7 @@ body {
         margin-top: 30px;
         font-size: 30px;
         display: none; }
-      body #burger-full #middle h2 {
+      body #burger-full #middle #pay {
         text-align: center;
         padding: 25px 0; }
     body #burger-full #right {

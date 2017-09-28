@@ -8,24 +8,28 @@ window.onload = function() {
 
   //------------BURGER LEFT----------//
 
-  const cheese = document.getElementById('cheese');
-  const cheese1 = document.getElementById('cheese1');
-  const cheese2 = document.getElementById('cheese2');
-  const cheese3 = document.getElementById('cheese3');
-  const tomato = document.getElementById('tomato');
-  const onion = document.getElementById('onion');
-  const meatball1 = document.getElementById('meatball1');
-  const meatball2 = document.getElementById('meatball2');
-  const meatball3 = document.getElementById('meatball3');
-  const pickle = document.getElementById('pickle');
-  const pattyTop = document.getElementById('pattyTop');
-  const pattyBottom = document.getElementById('pattyBottom');
-
+  const cheese = document.getElementById('cheese1');
+  const tomato = document.getElementById('tomato1');
+  const onion = document.getElementById('onion1');
+  const meatball = document.getElementById('meatball1');
+  const pickle = document.getElementById('pickle1');
+  const patty = document.getElementById('patty1');
+  const topBun = document.getElementById('bunTopR');
 
   const addCheese = document.getElementById('addCheese');
+  const addTomato = document.getElementById('addTomato');
+  const addOnion = document.getElementById('addOnion');
+  const addMeatball = document.getElementById('addMeatball');
+  const addPickle = document.getElementById('addPickle');
+  const addPatty = document.getElementById('addPatty');
+
+  const burger = document.getElementById('burger');
   //----------------CHECKOUT-----------//
 
   const checkout = document.getElementById('checkout');
+
+  var ingridientsArray = [];
+
 
   //----------layers function-----------//
 
@@ -43,82 +47,123 @@ window.onload = function() {
 
   //--------element funcions-------//
 
-  const bunBottomRr = document.getElementById('bunBottomR');
-  bunBottomRr.insertAdjacentHTML('afterbegin', '<div id="cheese" title="cheese"></div>');
+
+  addCheese.onclick = function () {
+    if (ingridientsArray.length == 3) {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    } else {
+      addCheeseToBurger(cheese);
+      ingridientsArray.push(cheese);
+      console.log(ingridientsArray);
+    }
+  }
 
 
-  // function showHideElem(ingridientL, ingridientR){
-  //   ingridientL.addEventListener("click", function(){
-  //     if (ingridientR.style.display == 'none') {
-  //       ingridientR.style.display = 'block';
-  //       ingridientL.style.display = 'none';
-  //       counter--;
-  //       console.log(counter);
-  //     } else {
-  //       if(counter < 3){
-  //         ingridientL.style.display = 'none';
-  //         ingridientR.style.display = 'block';
-  //         counter++;
-  //         console.log(counter);
-  //       } else {
-  //         return;
-  //       }
-  //     }
-  //   });
+  addTomato.onclick = function () {
+    if (ingridientsArray.length == 3) {
+      var popup = document.getElementById("myPopup1");
+      popup.classList.toggle("show1");
+    } else {
+      addTomatoToBurger(tomato);
+      ingridientsArray.push(tomato);
+      console.log(ingridientsArray);
+    }
+  }
+
+  addOnion.onclick = function () {
+    if (ingridientsArray.length == 3) {
+      var popup = document.getElementById("myPopup2");
+      popup.classList.toggle("show2");
+    } else {
+      addOnionToBurger(onion);
+      ingridientsArray.push(onion);
+      console.log(ingridientsArray);
+    }
+  }
+
+  addMeatball.onclick = function () {
+    if (ingridientsArray.length == 3) {
+      var popup = document.getElementById("myPopup3");
+      popup.classList.toggle("show3");
+    } else {
+      addMeatballToBurger(meatball);
+      ingridientsArray.push(meatball);
+      console.log(ingridientsArray);
+    }
+  }
+
+  addPickle.onclick = function () {
+    if (ingridientsArray.length == 3) {
+      var popup = document.getElementById("myPopup4");
+      popup.classList.toggle("show4");
+    } else {
+      addPickleToBurger(pickle);
+      ingridientsArray.push(pickle);
+      console.log(ingridientsArray);
+    }
+  }
+
+  addPatty.onclick = function () {
+    if (ingridientsArray.length == 3) {
+      var popup = document.getElementById("myPopup5");
+      popup.classList.toggle("show5");
+    } else {
+      addPattyToBurger(patty);
+      ingridientsArray.push(patty);
+      console.log(ingridientsArray);
+    }
+  }
+
+  function showCheckout(){
+    if (ingridientsArray.length == 3){
+      checkout.style.display = 'block';
+    }
+  }
+
+
+  function addCheeseToBurger(element) {
+    console.log(element);
+    topBun.insertAdjacentHTML('afterend', '<div id="cheese1"></div>');
+  }
+
+  function addTomatoToBurger(element) {
+    console.log(element);
+    topBun.insertAdjacentHTML('afterend', '<div id="tomato1"></div>');
+  }
+
+  function addOnionToBurger(element) {
+    console.log(element);
+    topBun.insertAdjacentHTML('afterend',
+    '<div id="onion1"><span></span><span></span><span></span><span></span><span></span></div>');
+  }
+
+  function addMeatballToBurger(element) {
+    console.log(element);
+    topBun.insertAdjacentHTML('afterend', '<div id="meatball1"></div>');
+  }
+
+  function addPickleToBurger(element) {
+    console.log(element);
+    topBun.insertAdjacentHTML('afterend', '<div id="pickle1"></div>');
+  }
+
+  function addPattyToBurger(element) {
+    console.log(element);
+    topBun.insertAdjacentHTML('afterend', '<div id="patty1"></div>');
+  }
+
+  //--------------INTRO LAYER-----------//
+
+  // cheese.onclick = function(){
+  //   burger.removeChild(cheese);
   // }
 
+  hideLayers(introLayer, burgerLayer);
 
 
-    //
-    // function disableButton(button){
-    //   if(counter == 2){
-    //     button.style.display = 'block';
-    //   }
-    // };
-    //
-    // disableButton(checkout);
-    // console.log(checkout.style.display);
-    // console.log(pickle.style.height);
-    //--------------INTRO LAYER-----------//
 
-    hideLayers(introLayer, burgerLayer);
 
-    //-----------INGRIDIENTS------------//
 
-    // showHideElem(cheese, cheeseR);
-    // showHideElem(cheeseR, cheese);
-    //
-    // showHideElem(tomato, tomatoR);
-    // showHideElem(tomatoR, tomato);
-    //
-    // showHideElem(cheese1, cheese1R);
-    // showHideElem(cheese1R, cheese1);
-    //
-    // showHideElem(cheese2, cheese2R);
-    // showHideElem(cheese2R, cheese2);
-    //
-    // showHideElem(cheese3, cheese3R);
-    // showHideElem(cheese3R, cheese3);
-    //
-    // showHideElem(onion, onionR);
-    // showHideElem(onionR, onion);
-    //
-    // showHideElem(meatball1, meatball1R);
-    // showHideElem(meatball1R, meatball1);
-    //
-    // showHideElem(meatball2, meatball2R);
-    // showHideElem(meatball2R, meatball2);
-    //
-    // showHideElem(meatball3, meatball3R);
-    // showHideElem(meatball3R, meatball3);
-    //
-    // showHideElem(pickle, pickleR);
-    // showHideElem(pickleR, pickle);
-    //
-    // showHideElem(pattyTop, pattyTopR);
-    // showHideElem(pattyTopR, pattyTop);
-    //
-    // showHideElem(pattyBottom, pattyBottomR);
-    // showHideElem(pattyBottomR, pattyBottom);
 
-  };
+};

@@ -49,10 +49,74 @@ body{
     }
   }
 
+
   #burger-full {
+
 
     display: none;
     justify-content: space-evenly;
+
+    #cheese1{
+      padding-top: 18px;
+      width: 85%;
+      margin: 0 auto;
+      background-color: #eed102;
+      border-bottom: 3px solid #b8ab0b;
+    }
+
+    #tomato1{
+      padding-top: 30px;
+      width: 70%;
+      margin: 0 auto;
+      background-color: #be0303;
+      border-bottom: 2px solid #820f0f;
+
+    }
+
+    #onion1{
+      width: 55%;
+      margin: 0 auto;
+      background-color: #581458;
+      display: flex;
+      justify-content: space-evenly;
+
+      span{
+        height: 18px;
+        width: 18px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.67);
+        justify-content: space-around;
+
+      }
+    }
+
+    #meatball1{
+      height: 60px;
+      width: 65px;
+      background-color: #7c4220;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+
+    #pickle1{
+      padding-top: 45px;
+      width: 73%;
+      margin: 0 auto;
+      background-color: #64d788;
+      border-radius: 0px 0px 100px 100px;
+      border-bottom: 11px solid rgba(0, 0, 0, 0.29);
+
+    }
+
+    #patty1{
+      padding-top: 45px;
+      width: 85%;
+      margin: 0 auto;
+      background-color: #de5e13;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+      border-radius: 20px;
+
+    }
 
     #left{
 
@@ -85,6 +149,42 @@ body{
           margin-top: 5px;
           margin-bottom: 5px;
           cursor: pointer;
+          position: relative;
+
+          .popuptext{
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+          }
+
+          .popuptext::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+
+          .show{
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s;
+          }
+
+          @keyframes fadeIn {
+            50% {opacity:1 ;}
+          }
         }
 
         #addTomato{
@@ -97,6 +197,42 @@ body{
           margin-top: 5px;
           margin-bottom: 5px;
           cursor: pointer;
+          position: relative;
+
+          .popuptext1{
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+          }
+
+          .popuptext1::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+
+          .show1{
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s;
+          }
+
+          @keyframes fadeIn {
+            50% {opacity:1 ;}
+          }
         }
 
         #addOnion{
@@ -109,6 +245,42 @@ body{
           margin-top: 5px;
           margin-bottom: 5px;
           cursor: pointer;
+          position: relative;
+
+          .popuptext2{
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+          }
+
+          .popuptext2::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+
+          .show2{
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s;
+          }
+
+          @keyframes fadeIn {
+            50% {opacity:1 ;}
+          }
         }
 
         #addMeatball{
@@ -121,6 +293,42 @@ body{
           margin-top: 5px;
           margin-bottom: 5px;
           cursor: pointer;
+          position: relative;
+
+          .popuptext3{
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+          }
+
+          .popuptext3::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+
+          .show3{
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s;
+          }
+
+          @keyframes fadeIn {
+            50% {opacity:1 ;}
+          }
         }
 
         #addPickle{
@@ -133,6 +341,42 @@ body{
           margin-top: 5px;
           margin-bottom: 5px;
           cursor: pointer;
+          position: relative;
+
+          .popuptext4{
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+          }
+
+          .popuptext4::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+
+          .show4{
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s;
+          }
+
+          @keyframes fadeIn {
+            50% {opacity:1 ;}
+          }
         }
 
         #addPatty{
@@ -145,6 +389,42 @@ body{
           margin-top: 5px;
           margin-bottom: 5px;
           cursor: pointer;
+          position: relative;
+
+          .popuptext5{
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+          }
+
+          .popuptext5::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+
+          .show5{
+            -webkit-animation: fadeIn 4s;
+            animation: fadeIn 4s;
+          }
+
+          @keyframes fadeIn {
+            50% {opacity:1 ;}
+          }
         }
 
         #tomato{
@@ -155,6 +435,8 @@ body{
           border-bottom: 2px solid #820f0f;
 
         }
+
+
 
         #onion{
           width: 55%;
@@ -231,7 +513,7 @@ body{
 
       }
 
-      h2{
+      #pay{
         text-align: center;
         padding: 25px 0;
       }
