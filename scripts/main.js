@@ -5,7 +5,7 @@ window.onload = function() {
   const startButton = document.getElementById('start');
   const introLayer = document.getElementById('intro');
   const burgerLayer = document.getElementById('burger-full');
-
+  const checkoutLayer = document.getElementById('checkoutLayer');
   //------------BURGER LEFT----------//
 
   const cheese = document.getElementById('cheese1');
@@ -24,23 +24,26 @@ window.onload = function() {
   const addPatty = document.getElementById('addPatty');
 
   const burger = document.getElementById('burger');
+
+  const checkoutButton = document.getElementById('checkout')
   //----------------CHECKOUT-----------//
 
-  const checkout = document.getElementById('checkout');
+ ingridientsArray = [];
+  total = 0;
 
-  var ingridientsArray = [];
-
+    // cheese.onClick = function() {
+    //   cheese.style.display = 'none';
+    // }
 
   //----------layers function-----------//
 
-  function hideLayers(elemHide, elemShow){
-    startButton.addEventListener("click", function(){
+  function hideLayers(elemHide, elemShow,  button){
+    button.addEventListener("click", function(){
       if (elemHide.style.display == 'none') {
         elemHide.style.display = 'block';
       } else {
         elemHide.style.display = 'none';
         elemShow.style.display = 'flex';
-
       }
     }, false);
   }
@@ -49,71 +52,84 @@ window.onload = function() {
 
 
   addCheese.onclick = function () {
-    if (ingridientsArray.length == 3) {
+    if (ingridientsArray.length == 6) {
       var popup = document.getElementById("myPopup");
       popup.classList.toggle("show");
     } else {
       addCheeseToBurger(cheese);
       ingridientsArray.push(cheese);
+      total += 3;
+      document.getElementById('pay').innerHTML = "TOTAL " + total + "$";
       console.log(ingridientsArray);
     }
-  }
+  };
 
 
   addTomato.onclick = function () {
-    if (ingridientsArray.length == 3) {
+    if (ingridientsArray.length == 6) {
       var popup = document.getElementById("myPopup1");
       popup.classList.toggle("show1");
     } else {
       addTomatoToBurger(tomato);
       ingridientsArray.push(tomato);
+      total += 3;
+      document.getElementById('pay').innerHTML = "TOTAL " + total + "$";
+
       console.log(ingridientsArray);
     }
-  }
+  };
 
   addOnion.onclick = function () {
-    if (ingridientsArray.length == 3) {
+    if (ingridientsArray.length == 6) {
       var popup = document.getElementById("myPopup2");
       popup.classList.toggle("show2");
     } else {
       addOnionToBurger(onion);
       ingridientsArray.push(onion);
+      total += 3;
+      document.getElementById('pay').innerHTML = "TOTAL " + total + "$";
       console.log(ingridientsArray);
     }
-  }
+  };
 
   addMeatball.onclick = function () {
-    if (ingridientsArray.length == 3) {
+    if (ingridientsArray.length == 6) {
       var popup = document.getElementById("myPopup3");
       popup.classList.toggle("show3");
     } else {
       addMeatballToBurger(meatball);
       ingridientsArray.push(meatball);
+      total += 3;
+      document.getElementById('pay').innerHTML = "TOTAL " + total + "$";
       console.log(ingridientsArray);
     }
-  }
+  };
 
   addPickle.onclick = function () {
-    if (ingridientsArray.length == 3) {
+    if (ingridientsArray.length == 6) {
       var popup = document.getElementById("myPopup4");
       popup.classList.toggle("show4");
     } else {
       addPickleToBurger(pickle);
       ingridientsArray.push(pickle);
+      total += 3;
+      document.getElementById('pay').innerHTML = "TOTAL " + total + "$";
       console.log(ingridientsArray);
     }
-  }
+  };
 
   addPatty.onclick = function () {
-    if (ingridientsArray.length == 3) {
+    if (ingridientsArray.length == 6) {
       var popup = document.getElementById("myPopup5");
       popup.classList.toggle("show5");
     } else {
       addPattyToBurger(patty);
       ingridientsArray.push(patty);
+      total += 3;
+      document.getElementById('pay').innerHTML = "TOTAL " + total + "$";
       console.log(ingridientsArray);
     }
-  }
+  };
 
   function showCheckout(){
     if (ingridientsArray.length == 3){
@@ -155,15 +171,20 @@ window.onload = function() {
 
   //--------------INTRO LAYER-----------//
 
-  // cheese.onclick = function(){
-  //   burger.removeChild(cheese);
-  // }
+  hideLayers(introLayer, burgerLayer, startButton);
 
-  hideLayers(introLayer, burgerLayer);
-
+  document.getElementById('total').innerHTML = "You have to pay total "
+  + total + "$";
 
 
+  const back = document.getElementById('backButton');
 
+  function goToCheckout(){
+    if(ingridientsArray.length > 0){
+    }
+  }
+  hideLayers(burgerLayer, checkoutLayer, checkoutButton);
 
+  hideLayers(checkoutLayer, burgerLayer, back);
 
 };

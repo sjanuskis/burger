@@ -147,7 +147,7 @@ body{
           margin: 0 auto;
           border: 2px solid #eaea6d;
           margin-top: 5px;
-          margin-bottom: 5px;
+          margin-bottom: 20px;
           cursor: pointer;
           position: relative;
 
@@ -164,6 +164,7 @@ body{
             left: 50%;
             margin-left: -80px;
             opacity: 0;
+            display: none;
           }
 
           .popuptext::after{
@@ -180,6 +181,7 @@ body{
           .show{
             -webkit-animation: fadeIn 4s;
             animation: fadeIn 4s;
+            display: block;
           }
 
           @keyframes fadeIn {
@@ -195,7 +197,7 @@ body{
           margin: 0 auto;
           border: 2px solid #eaea6d;
           margin-top: 5px;
-          margin-bottom: 5px;
+          margin-bottom: 20px;
           cursor: pointer;
           position: relative;
 
@@ -212,6 +214,7 @@ body{
             left: 50%;
             margin-left: -80px;
             opacity: 0;
+            display: none;
           }
 
           .popuptext1::after{
@@ -228,6 +231,7 @@ body{
           .show1{
             -webkit-animation: fadeIn 4s;
             animation: fadeIn 4s;
+            display: block;
           }
 
           @keyframes fadeIn {
@@ -243,7 +247,7 @@ body{
           margin: 0 auto;
           border: 2px solid #eaea6d;
           margin-top: 5px;
-          margin-bottom: 5px;
+          margin-bottom: 20px;
           cursor: pointer;
           position: relative;
 
@@ -260,6 +264,7 @@ body{
             left: 50%;
             margin-left: -80px;
             opacity: 0;
+            display: none;
           }
 
           .popuptext2::after{
@@ -276,6 +281,7 @@ body{
           .show2{
             -webkit-animation: fadeIn 4s;
             animation: fadeIn 4s;
+            display: block;
           }
 
           @keyframes fadeIn {
@@ -291,7 +297,7 @@ body{
           margin: 0 auto;
           border: 2px solid #eaea6d;
           margin-top: 5px;
-          margin-bottom: 5px;
+          margin-bottom: 20px;
           cursor: pointer;
           position: relative;
 
@@ -308,6 +314,7 @@ body{
             left: 50%;
             margin-left: -80px;
             opacity: 0;
+            display: none;
           }
 
           .popuptext3::after{
@@ -324,6 +331,7 @@ body{
           .show3{
             -webkit-animation: fadeIn 4s;
             animation: fadeIn 4s;
+            display: block;
           }
 
           @keyframes fadeIn {
@@ -339,7 +347,7 @@ body{
           margin: 0 auto;
           border: 2px solid #eaea6d;
           margin-top: 5px;
-          margin-bottom: 5px;
+          margin-bottom: 20px;
           cursor: pointer;
           position: relative;
 
@@ -356,6 +364,7 @@ body{
             left: 50%;
             margin-left: -80px;
             opacity: 0;
+            display: none;
           }
 
           .popuptext4::after{
@@ -372,6 +381,7 @@ body{
           .show4{
             -webkit-animation: fadeIn 4s;
             animation: fadeIn 4s;
+            display: block;
           }
 
           @keyframes fadeIn {
@@ -387,7 +397,7 @@ body{
           margin: 0 auto;
           border: 2px solid #eaea6d;
           margin-top: 5px;
-          margin-bottom: 5px;
+          margin-bottom: 20px;
           cursor: pointer;
           position: relative;
 
@@ -404,6 +414,7 @@ body{
             left: 50%;
             margin-left: -80px;
             opacity: 0;
+            display: none;
           }
 
           .popuptext5::after{
@@ -420,6 +431,7 @@ body{
           .show5{
             -webkit-animation: fadeIn 4s;
             animation: fadeIn 4s;
+            display: block;
           }
 
           @keyframes fadeIn {
@@ -485,15 +497,7 @@ body{
       }
     }
 
-    #arrow{
-      background: url(../../pics/arrow.png);
-      height: 80px;
-      width: 80px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin: auto 0;
-    }
+
 
     #middle{
 
@@ -509,13 +513,15 @@ body{
         text-align: center;
         margin-top: 30px;
         font-size: 30px;
-        display: none;
-
+        border-radius: 17%;
       }
 
       #pay{
         text-align: center;
-        padding: 25px 0;
+        padding: 12px 0;
+        margin-top: 10px;
+        font-size: 22px;
+        color: darkslategrey;
       }
     }
 
@@ -571,6 +577,39 @@ body{
         }
       }
 
+    }
+  }
+
+  #checkoutLayer{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: none;
+
+    #backButton{
+        background: url(../../pics/back.png);
+        height: 80px;
+        width: 80px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 25px;
+        cursor: pointer;
+    }
+
+    #total{
+      text-align: center;
+      width: 633px;
+      height: 120px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      letter-spacing: 3px;
+      color: dimgrey;
+      font-size: 25px;
     }
   }
 }
