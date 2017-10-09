@@ -8,7 +8,8 @@ window.onload = function() {
   const checkoutLayer = document.getElementById('checkoutLayer');
   //------------BURGER LEFT----------//
 
-  const cheese = document.getElementById('cheese1');
+  // const cheese = document.getElementById('cheese1');
+  const cheese = document.getElementById('cheese');
   const tomato = document.getElementById('tomato1');
   const onion = document.getElementById('onion1');
   const meatball = document.getElementById('meatball1');
@@ -28,13 +29,22 @@ window.onload = function() {
   const checkoutButton = document.getElementById('checkout')
   //----------------CHECKOUT-----------//
 
+checkoutButton.onclick = function () {
+  setTotalPriceInCheckout();
+}
+
+function setTotalPriceInCheckout() {
+  document.getElementById('total').innerHTML = "You have to pay total "
+  + total + "$";
+}
+
  ingridientsArray = [];
   total = 0;
 
     // cheese.onClick = function() {
     //   cheese.style.display = 'none';
     // }
-
+  
   //----------layers function-----------//
 
   function hideLayers(elemHide, elemShow,  button){
@@ -50,6 +60,14 @@ window.onload = function() {
 
   //--------element funcions-------//
 
+  // use price list object, so you can set 
+  // the values tghrough user interaction.
+  // Also, change once - apply everywhere principle.
+  const priceList = {
+    cheese: 2,
+    // add more...
+  };
+
 
   addCheese.onclick = function () {
     if (ingridientsArray.length == 6) {
@@ -58,8 +76,10 @@ window.onload = function() {
     } else {
       addCheeseToBurger(cheese);
       ingridientsArray.push(cheese);
-      total += 3;
-      document.getElementById('pay').innerHTML = "TOTAL " + total + "$";
+      total += priceList.cheese;
+      document.getElementById('pay').innerHTML = "TOTAL " + total + "$"; // this is repeated code in a lot of places. 
+      // ^ create a function for this and call that function here.
+      // ^ Imagine you need to change wording, symbols or anything else.. then you would go to all places in your app to change that.
       console.log(ingridientsArray);
     }
   };
@@ -137,7 +157,7 @@ window.onload = function() {
     }
   }
 
-
+  
   function addCheeseToBurger(element) {
     console.log(element);
     topBun.insertAdjacentHTML('afterend', '<div id="cheese1"></div>');
